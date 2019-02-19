@@ -44,10 +44,10 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void onClickCalculate(){
+    /*public void onClickCalculate(View v){
         if(checkFieldsParseAsInteger()&&!incomeTextEntry.getText().equals("")) {
             taxInfo = new TaxInformation(Integer.parseInt(incomeTextEntry.getText().toString()), statusRadioGroup.getCheckedRadioButtonId());
             taxResultTextView.setText(TaxCalculator.rate(taxInfo) + );
         }
-    }
+    }*/
 }
