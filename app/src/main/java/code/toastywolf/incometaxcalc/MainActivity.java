@@ -2,6 +2,8 @@ package code.toastywolf.incometaxcalc;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
@@ -44,10 +46,15 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    /*public void onClickCalculate(View v){
+//    private int radioButtonId(){
+//        if(R.id.single)
+//    }
+
+    public void onClickCalculate(View v){
         if(checkFieldsParseAsInteger()&&!incomeTextEntry.getText().equals("")) {
-            taxInfo = new TaxInformation(Integer.parseInt(incomeTextEntry.getText().toString()), statusRadioGroup.getCheckedRadioButtonId());
-            taxResultTextView.setText(TaxCalculator.rate(taxInfo) + );
+            taxInfo = new TaxInformation(Integer.parseInt(incomeTextEntry.getText().toString()), statusRadioGroup.getCheckedRadioButtonId()-R.id.single);
+            String why=""+taxInfo.getIncome()+taxInfo.getIncome()*TaxCalculator.rate(taxInfo);
+            taxResultTextView.setText(why);
         }
-    }*/
+    }
 }

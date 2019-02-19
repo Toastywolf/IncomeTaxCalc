@@ -13,4 +13,8 @@ public class TaxInformation {
         this.income = income;
         this.filing_as = filing_as;
     }
+
+    public double getIncome(){
+        return income;
+    }
 }
