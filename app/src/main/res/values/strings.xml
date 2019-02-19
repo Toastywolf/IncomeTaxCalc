@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Income Tax Calculator</string>
+    <string name="single">Single</string>
+    <string name="jointMarriage">Married Filing Jointly</string>
+    <string name="houseHead">Head of Household</string>
+    <string name="separateMarriage">Married Filing Separately</string>
+    <string name="income">Income</string>
+    <string name="calculate">Calculate</string>
 </resources>

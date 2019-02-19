@@ -97,4 +97,14 @@ public class TaxCalculator {
             return 0.37;
         }
     }
+
+    /*
+    public void restoreState(String x){
+
+    }
+
+    public String getState(){
+
+    }
+    */
 }
