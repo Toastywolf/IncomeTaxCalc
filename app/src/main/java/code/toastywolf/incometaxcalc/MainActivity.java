@@ -46,10 +46,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-//    private int radioButtonId(){
-//        if(R.id.single)
-//    }
-
     public void onClickCalculate(View v){
         if(checkFieldsParseAsInteger()&&!incomeTextEntry.getText().equals("")) {
             taxInfo = new TaxInformation(Integer.parseInt(incomeTextEntry.getText().toString()), statusRadioGroup.getCheckedRadioButtonId()-R.id.single);
